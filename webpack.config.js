@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -44,14 +45,14 @@ module.exports = {
       port: 9000
     },
     plugins: [
-    new HtmlWebpackPlugin({
-        filename: 'index.html',
-        template: './pages/index/index.pug',
-    }),
-    new HtmlWebpackPlugin({
-        filename: 'about.html',
-        template: './pages/about/about.pug',
-    }),
+    // new HtmlWebpackPlugin({
+    //     filename: 'index.html',
+    //     template: './pages/index/index.pug',
+    // }),
+    // new HtmlWebpackPlugin({
+    //     filename: 'about.html',
+    //     template: './pages/about/about.pug',
+    // }),
     new webpack.SourceMapDevToolPlugin({
       filename: '[file].map[query]',
       exclude: ['vendor.js'],
@@ -113,4 +114,42 @@ module.exports = {
             }
         ]
     }
+}
+
+const pathToEntries = path.join(module.exports.context, 'pages');
+const types = ['.js', '.scss'];
+
+[
+  'index',
+
+].forEach(entryName => {
+  const entryFiles = [];
+  const dashedName = toDashString(entryName);
+  const pathToEntry = path.join(pathToEntries, dashedName);
+  types.forEach(type => {
+    const entryFile = path.join(pathToEntry, `${dashedName}${type}`);
+    if (fs.existsSync(entryFile)) {
+      entryFiles.push(entryFile);
+    }
+  });
+  if (entryFiles.length) {
+    module.exports.entry[entryName] = entryFiles;
+  }
+  module.exports.plugins.push(
+    new HtmlWebpackPlugin({
+      template: path.join(pathToEntry, `${dashedName}.pug`),
+      filename: `${dashedName}.html`,
+      chunks: [entryName]
+    }),
+  );
+});
+
+function toDashString(string) {
+  const chars = Array.from(string);
+  chars.forEach((char, index, array) => {
+    if (char === char.toUpperCase()) {
+      array[index] = `-${char.toLowerCase()}`;
+    }
+  });
+  return chars.join('');
 }
