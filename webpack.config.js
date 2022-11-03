@@ -35,7 +35,8 @@ const optimization = () => {
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
-    entry: './App.js',
+    entry: {},
+    // entry: './App.js',
     output: {
         filename: `./js/${filename('js')}`,
         path: path.resolve(__dirname, 'dist')
@@ -121,7 +122,6 @@ const types = ['.js', '.scss'];
 
 [
   'index',
-
 ].forEach(entryName => {
   const entryFiles = [];
   const dashedName = toDashString(entryName);
