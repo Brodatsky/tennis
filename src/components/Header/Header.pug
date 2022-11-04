@@ -2,10 +2,10 @@ header.header
     .container 
         .header__inner
             .header__logo Логотип сайта
-            nav.header__menu
-                ul.header-nav
+            nav.header__nav
+                ul.nav-wrapper
                     each name in ['Главная', 'О клубе', 'Турниры', 'Услуги', 'Детский теннис', 'Галерея', 'Цены', 'Контакты']
-                        li
+                        li.nav-item
                             a(href="#")= name
             .header__icons Иконки
         
