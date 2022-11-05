@@ -3,3 +3,13 @@
 @import "./utils/fonts.css";
 @import "./utils/vars.scss";
 @import '../../components/modul.scss';
+
+body {
+    font-family: 'Montserrat-Regular', sans-serif;
+    background: rgb(207, 165, 165);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
 
     &__inner {
         display: flex;
@@ -13,21 +17,8 @@
         align-items: center;
     }
 
-    &__nav {
-        display: flex;
-    }
-
     &__icons {
         display: flex;
         align-items: center;
     }
-}
-
-// .icon {
-//     display: inline-block;
-// }
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
 }

@@ -1,12 +1,21 @@
 .nav{
-
+    color: white;
+    
     &__wrapper{
         display: flex;
         list-style: none;    
     }
 
     &__item {
-        margin-right: 40px;
+        margin-right: 40px;     
+    }
+
+    &__item-link{
+        color: inherit;
+        // font-weight: 700;
+        // position: relative;
+        text-decoration: none;
+        // transition: all .1s linear;
     }
 
     &__item:last-child {
