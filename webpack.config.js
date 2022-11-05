@@ -43,17 +43,10 @@ module.exports = {
       },
     optimization: optimization(),
     devServer: {
-      port: 9000
+      port: 9000,
+      hot: true
     },
     plugins: [
-    // new HtmlWebpackPlugin({
-    //     filename: 'index.html',
-    //     template: './pages/index/index.pug',
-    // }),
-    // new HtmlWebpackPlugin({
-    //     filename: 'about.html',
-    //     template: './pages/about/about.pug',
-    // }),
     new webpack.SourceMapDevToolPlugin({
       filename: '[file].map[query]',
       exclude: ['vendor.js'],
@@ -70,7 +63,11 @@ module.exports = {
           {
             from: path.resolve(__dirname, 'src/assets/favicons'),
             to: path.resolve(__dirname, 'dist/assets/favicons') 
-          }
+          },
+          // {
+          //   from: path.resolve(__dirname, 'src/assets/svg'),
+          //   to: path.resolve(__dirname, 'dist/assets/svg') 
+          // }
         ]
       }),
     new MiniCssExtractPlugin({

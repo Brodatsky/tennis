@@ -1,10 +1,14 @@
 .header {
     display: flex;
-    background: rgb(238, 192, 192);
-    padding: 50px;
+    background: rgb(179, 169, 169);
 
     &__inner {
         display: flex;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
     }
 
     &__nav {
@@ -15,11 +19,19 @@
         display: flex;
         list-style: none;
     }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        fill: #ffffff;
+    }
 }
 
 .nav-wrapper{
     display: flex;
-    list-style: none;
+    list-style: none;    
+}
 
-    
+.icon {
+    display: inline-block;
 }
