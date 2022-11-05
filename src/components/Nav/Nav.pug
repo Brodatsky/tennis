@@ -1,0 +1,8 @@
+mixin Nav
+    -const items = ['Главная', 'О клубе', 'Турниры', 'Услуги', 'Детский теннис', 'Галерея', 'Цены', 'Контакты']
+        
+        nav.nav
+            ul.nav__wrapper
+                each name in items
+                    li.nav__item
+                        a(href="#")= name

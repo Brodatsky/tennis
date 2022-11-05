@@ -1,4 +1,15 @@
-.nav-wrapper{
-    display: flex;
-    list-style: none;    
+.nav{
+
+    &__wrapper{
+        display: flex;
+        list-style: none;    
+    }
+
+    &__item {
+        margin-right: 40px;
+    }
+
+    &__item:last-child {
+        margin-right: 0px;
+    }
 }

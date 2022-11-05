@@ -1,9 +1,11 @@
 .header {
     display: flex;
-    background: rgb(179, 169, 169);
+    align-items: center;
+    background: transparent;
 
     &__inner {
         display: flex;
+        fill: #ffffff;
     }
 
     &__logo {
@@ -15,23 +17,17 @@
         display: flex;
     }
 
-    &__nav-wrapper {
-        display: flex;
-        list-style: none;
-    }
-
     &__icons {
         display: flex;
         align-items: center;
-        fill: #ffffff;
     }
 }
 
-.nav-wrapper{
-    display: flex;
-    list-style: none;    
-}
+// .icon {
+//     display: inline-block;
+// }
 
-.icon {
-    display: inline-block;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }

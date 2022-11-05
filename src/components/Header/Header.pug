@@ -1,12 +1,12 @@
+include ../Nav/Nav.pug
+
 header.header
     .container 
         .header__inner
-            .header__logo Логотип сайта
-            nav.header__nav
-                ul.nav-wrapper
-                    each name in ['Главная', 'О клубе', 'Турниры', 'Услуги', 'Детский теннис', 'Галерея', 'Цены', 'Контакты']
-                        li.nav-item
-                            a(href="#")= name
+            .header__logo
+                include ../../assets/svg/logo.svg
+            .header__nav
+                +Nav
             .header__icons
                 i.icon
                     include ../../assets/svg/youtube.svg
