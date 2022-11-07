@@ -1,8 +1,10 @@
 .nav{
+    font-size: 14px;
     color: white;
-    
+  
     &__wrapper{
         display: flex;
+        justify-content: space-between;
         list-style: none;    
     }
 
@@ -12,10 +14,8 @@
 
     &__item-link{
         color: inherit;
-        // font-weight: 700;
-        // position: relative;
+        white-space: nowrap;
         text-decoration: none;
-        // transition: all .1s linear;
     }
 
     &__item:last-child {

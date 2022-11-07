@@ -4,12 +4,28 @@
 @import "./utils/vars.scss";
 @import '../../components/modul.scss';
 
+html { overflow:  hidden; }
+
 body {
-    font-family: 'Montserrat-Regular', sans-serif;
+    font-family: 'Gilroy Regular', sans-serif;
     background: rgb(207, 165, 165);
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
 }
+
+@media (min-width: 1296px){
+.container {
+    max-width: 1296px;
+}
+}
+
+@media (min-width: 600px){
+    .container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+}
+

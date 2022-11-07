@@ -10,17 +10,26 @@
 
     &__inner {
         display: flex;
-        fill: #ffffff;
     }
 
     &__logo {
         display: flex;
+        fill: #ffffff;
         align-items: center;
+        margin-right: 85px;
+    }
+
+    &__nav {
+        margin-right: 40px;
     }
 
     &__icons {
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        width: 92px;
+        fill: #ffffff;
+        margin-left: auto;
     }
 
     &::after {
@@ -33,4 +42,12 @@
         background-color: #ffffff;
         opacity: 0.3;
     }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
 }
