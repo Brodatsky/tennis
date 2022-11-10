@@ -5,7 +5,22 @@
     background-position: center 100%;
     background-color: rgb(153, 153, 153);
     overflow: hidden;
-    margin-bottom: 70px;
-
     height: 1000px;
+    color: white;
+    
+    // margin-bottom: 70px;
+    &__inner {
+        height: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+    }
+
+    &__text {
+        height: 201px;
+        width: 636px;
+
+        font-size: 48px;
+    }
 }
+
