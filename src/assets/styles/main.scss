@@ -7,8 +7,14 @@
 html { overflow:  hidden; }
 
 body {
-    font-family: 'Gilroy Regular', sans-serif;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
     background: rgb(207, 165, 165);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 .container {

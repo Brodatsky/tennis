@@ -16,10 +16,12 @@
         display: flex;
         fill: #ffffff;
         align-items: center;
-        margin-right: 85px;
+        margin-right: 125px;
     }
 
     &__nav {
+        display: flex;
+        align-items: center;
         margin-right: 40px;
     }
 

@@ -2,14 +2,21 @@ section.hero
     .container
         .hero__inner
             .hero__text
-                h1 Петербургский 
-                br 
-                h1 теннисный клуб 
-                br 
-                h1 имени М.А. Пасечникова
-            .hero__play
-                .hero__play-button
-                    button(type='button' class=`hero__button`) play-icon
-                .hero__play-text
-                    p Посмотрите видео о нашем клубе
-                
+                .hero__title
+                    h1 Петербургский #[br] теннисный клуб #[br] имени М.А. Пасечникова
+                .hero__play
+                    .hero__play-button
+                        button(type='button' class=`hero__button`) ▶
+                    //- .hero__play-text
+                    //-     p Посмотрите видео о нашем клубе
+            .hero__nav
+                ul.hero__nav-grid
+                    li.hero__nav-item 
+                        p 1
+                    li.hero__nav-item 
+                        p 2
+                    li.hero__nav-item 
+                        p 3
+                    li.hero__nav-item 
+                        p 4
+
