@@ -43,5 +43,8 @@
     "webpack-bundle-analyzer": "^4.6.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.0"
+  },
+  "dependencies": {
+    "reset-css": "^5.0.1"
   }
 }

@@ -6,17 +6,34 @@ section.hero
                     h1 Петербургский #[br] теннисный клуб #[br] имени М.А. Пасечникова
                 .hero__play
                     .hero__play-button
-                        button(type='button' class=`hero__button`) ▶
-                    //- .hero__play-text
-                    //-     p Посмотрите видео о нашем клубе
-            .hero__nav
-                ul.hero__nav-grid
-                    li.hero__nav-item 
-                        p 1
-                    li.hero__nav-item 
-                        p 2
-                    li.hero__nav-item 
-                        p 3
-                    li.hero__nav-item 
-                        p 4
+                        button(type='button' class=`hero__button`) 
+                            p ▶
+                    .hero__play-text
+                        p Посмотрите видео о нашем клубе
+            .hero__services
+                ul.hero__services-grid
+                    li.hero__services-item 
+                        .hero__services-inner
+                            span Услуги
+                            a(href="#", target="_blank") Аренда корта
+                                .hero__link-icon
+                                    include ../../assets/svg/link.svg
+                    li.hero__services-item 
+                        .hero__services-inner
+                            span Услуги
+                            a(href="#", target="_blank") Детский теннис
+                            .hero__link-icon 
+                                include ../../assets/svg/link.svg                    
+                    li.hero__services-item 
+                        .hero__services-inner
+                            span Услуги
+                            a(href="#", target="_blank") Сборы команд
+                            .hero__link-icon
+                                include ../../assets/svg/link.svg
+                    li.hero__services-item 
+                        .hero__services-inner
+                            span Турниры
+                            a(href="#", target="_blank") Расписание
+                            .hero__link-icon
+                                include ../../assets/svg/link.svg
 

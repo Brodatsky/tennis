@@ -1,3 +1,4 @@
+// @import '../../../node_modules/reset-css/reset.css';
 @import "~normalize.css";
 
 @import "./utils/fonts.css";
@@ -9,6 +10,7 @@ html { overflow:  hidden; }
 body {
     font-family: 'Gilroy', sans-serif;
     font-weight: 400;
+    line-height: 140%;
     background: rgb(207, 165, 165);
 }
 
