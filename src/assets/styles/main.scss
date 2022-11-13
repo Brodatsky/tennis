@@ -8,10 +8,12 @@
 html { overflow:  hidden; }
 
 body {
-    font-family: 'Gilroy', sans-serif;
-    font-weight: 400;
-    line-height: 140%;
-    background: rgb(207, 165, 165);
+    color: $mainFontColor;
+    font-family: $mainFont;
+    font-size: $mainFontSize;
+    font-weight: $mainFontWeight;
+    line-height: $mainLineHeight;
+    background: $bg-color;
 }
 
 ul {

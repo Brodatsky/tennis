@@ -3,10 +3,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 100%;
-    background-color: rgb(153, 153, 153);
+    background-color: $placeholder;
     overflow: hidden;
-    color: white;
-    fill: white;
     height: 1000px;
     margin-bottom: 150px;
     
@@ -49,7 +47,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid white;
+        border: 1px solid $border-base;
         border-radius: 50%;
 
     }
@@ -58,23 +56,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
         font-size: 25px;
         width: 64px;
         height: 64px;
         border-radius: 50%;
         border: none;
-        background: #8D86C9;
+        background: $accent-color;
+        color: $mainFontColor;
     }
 
     &__play-text {
         line-height: 140%;
         width: 158px;
-        font-size: 18px;
         font-weight: 600;
-    }
-
-    &__services {
     }
 
     &__services-grid {
@@ -87,7 +81,7 @@
     &__services-item {
         height: 151px;
         width: 315px;
-        background-color: #8D86C9;
+        background-color: $accent-color;
     }
 
     &__services-inner {
@@ -99,7 +93,6 @@
     }
 
     &__services-inner span {
-        font-size: 18px;
         font-weight: 600;
         margin-bottom: 17px;
         line-height: 140%;
@@ -114,23 +107,19 @@
         font-weight: 700;
         text-decoration: none;
         cursor: pointer;
-        color: white;
+        color: $mainFontColor;
+    }
+    
+    &__services-icon {
+        position: relative;
+        fill: $mainFontColor;
+        top: -5px;
+        left: 1px;
     }
 
     &__services-link:hover {
-        color: rgb(0, 0, 0);
-        fill: rgb(0, 0, 0);
-    }
-
-    &__link {
-    }
-
-
-    &__link-icon {
-        position: relative;
-        top: -5px;
-        left: 1px;
-        fill: inherit;
+        color: $link-hover-color;
+        fill: $link-hover-color;
     }
 }
 

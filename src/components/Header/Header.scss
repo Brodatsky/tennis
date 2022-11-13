@@ -14,9 +14,9 @@
 
     &__logo {
         display: flex;
-        fill: #ffffff;
         align-items: center;
         margin-right: 125px;
+        fill: $mainFontColor;
     }
 
     &__nav {
@@ -30,8 +30,8 @@
         align-items: center;
         justify-content: space-between;
         width: 92px;
-        fill: #ffffff;
         margin-left: auto;
+        fill: $mainFontColor;
     }
 
     &::after {
@@ -41,7 +41,7 @@
         height: 1px;
         top: 100%;
         position: absolute;
-        background-color: #ffffff;
+        background-color: $border-base;
         opacity: 0.3;
     }
 }
