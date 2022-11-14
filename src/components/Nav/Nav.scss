@@ -1,24 +1,29 @@
-.nav{
-    font-size: 14px;
-    font-weight: 500;
+.nav {
+  font-size: 14px;
+  font-weight: 500;
 
-    &__wrapper{
-        display: flex;
-        justify-content: space-between;
-        list-style: none; 
-    }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
 
-    &__item {
-        margin-right: 40px;     
-    }
+  &__item {
+    margin-right: 40px;
+  }
 
-    &__item-link{
-        color: inherit;
-        white-space: nowrap;
-        text-decoration: none;
-    }
+  &__item-link {
+    color: inherit;
+    white-space: nowrap;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
-    &__item:last-child {
-        margin-right: 0px;
-    }
+  &__item-link:hover {
+    color: $link-hover-color;
+  }
+
+  &__item:last-child {
+    margin-right: 0px;
+  }
 }

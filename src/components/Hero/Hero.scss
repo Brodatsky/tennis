@@ -1,125 +1,124 @@
 .hero {
-    background-image: url(../../assets/img/Hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center 100%;
-    background-color: $placeholder;
-    overflow: hidden;
+  background-image: url(../../assets/img/Hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 100%;
+  background-color: $placeholder;
+  overflow: hidden;
+  height: 1000px;
+  margin-bottom: 150px;
+
+  &__inner {
     height: 1000px;
-    margin-bottom: 150px;
-    
-    &__inner {
-        height: 1000px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    &__text {
-        display: flex;
-        flex-direction: column;
-        margin-top: 307px;
-    }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 307px;
+  }
 
-    &__title {
-        height: 201px;
-        margin-bottom: 60px;
-    }
+  &__title {
+    height: 201px;
+    margin-bottom: 60px;
+  }
 
-    &__title h1 {
-        margin: 0;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 140%;
-    }
+  &__title h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 140%;
+  }
 
-    &__play {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 80px;
-        width: 268px;
-    }
+  &__play {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 268px;
+  }
 
-    &__play-button {
-        width: 80px;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid $border-base;
-        border-radius: 50%;
+  &__play-button {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $border-base;
+    border-radius: 50%;
+  }
 
-    }
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: none;
+    background: $accent-color;
+    color: $mainFontColor;
+  }
 
-    &__button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-        width: 64px;
-        height: 64px;
-        border-radius: 50%;
-        border: none;
-        background: $accent-color;
-        color: $mainFontColor;
-    }
+  &__play-text {
+    line-height: 140%;
+    width: 158px;
+    font-weight: 600;
+  }
 
-    &__play-text {
-        line-height: 140%;
-        width: 158px;
-        font-weight: 600;
-    }
+  &__services-grid {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 12px;
+  }
 
-    &__services-grid {
-        list-style: none;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        column-gap: 12px;
-    }
+  &__services-item {
+    height: 151px;
+    width: 315px;
+    background-color: $accent-color;
+  }
 
-    &__services-item {
-        height: 151px;
-        width: 315px;
-        background-color: $accent-color;
-    }
+  &__services-inner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 35px;
+    margin-right: 40px;
+  }
 
-    &__services-inner {
-        display: flex;
-        flex-direction: column;
-        margin-top: 35px;
-        margin-left: 35px; 
-        margin-right: 40px;
-    }
+  &__services-inner span {
+    font-weight: 600;
+    margin-bottom: 17px;
+    line-height: 140%;
+  }
 
-    &__services-inner span {
-        font-weight: 600;
-        margin-bottom: 17px;
-        line-height: 140%;
-    }
+  &__services-link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: $mainFontColor;
+  }
 
-    &__services-link {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        font-size: 24px;
-        line-height: 140%;
-        font-weight: 700;
-        text-decoration: none;
-        cursor: pointer;
-        color: $mainFontColor;
-    }
-    
-    &__services-icon {
-        position: relative;
-        fill: $mainFontColor;
-        top: -5px;
-        left: 1px;
-    }
+  &__services-icon {
+    position: relative;
+    fill: $mainFontColor;
+    top: -5px;
+    left: 1px;
+  }
 
-    &__services-link:hover {
-        color: $link-hover-color;
-        fill: $link-hover-color;
-    }
+  &__services-link:hover {
+    color: $link-hover-color;
+    fill: $link-hover-color;
+  }
 }
-

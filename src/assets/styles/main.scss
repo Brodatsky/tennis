@@ -1,42 +1,41 @@
-// @import '../../../node_modules/reset-css/reset.css';
 @import "~normalize.css";
-
 @import "./utils/fonts.css";
 @import "./utils/vars.scss";
-@import '../../components/modul.scss';
+@import "../../components/modul.scss";
 
-html { overflow:  hidden; }
+// html {
+//   overflow: hidden;
+// }
 
 body {
-    color: $mainFontColor;
-    font-family: $mainFont;
-    font-size: $mainFontSize;
-    font-weight: $mainFontWeight;
-    line-height: $mainLineHeight;
-    background: $bg-color;
+  color: $mainFontColor;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+  background: $bg-color;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    max-width: 1296px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-@media (min-width: 1296px){
-    // .container {
-    //     max-width: 1296px;
-    // }
+@media (min-width: 1296px) {
+  // .container {
+  //     max-width: 1296px;
+  // }
 }
 
-@media (min-width: 600px){
-    .container {
-        padding-left: 24px;
-        padding-right: 24px;
-    }
+@media (min-width: 600px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
-
