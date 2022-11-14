@@ -25,17 +25,16 @@ ul {
   max-width: 1296px;
   width: 100%;
   margin: 0 auto;
+
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 @media (min-width: 1296px) {
-  // .container {
-  //     max-width: 1296px;
-  // }
 }
 
-@media (min-width: 600px) {
-  .container {
-    padding-left: 24px;
-    padding-right: 24px;
+@media (max-width: $tableWidth) {
+  .hero__services {
+    display: none;
   }
 }
