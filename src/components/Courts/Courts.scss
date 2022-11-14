@@ -1,0 +1,43 @@
+.courts {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 416px;
+    border: 1px solid $sub-accent-color;
+  }
+
+  &__card {
+    position: relative;
+    width: 376px;
+    height: 450px;
+    background: $placeholder;
+  }
+
+  &__img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+    top: 334px;
+    position: absolute;
+    color: $mainFontColor;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 140%;
+  }
+}
