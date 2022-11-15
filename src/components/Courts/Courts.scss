@@ -1,8 +1,10 @@
 .courts {
   color: $mainFontColor;
+  margin-bottom: 150px;
 
   &__wrapper {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
   }
@@ -39,5 +41,16 @@
     font-weight: 700;
     font-size: 27px;
     line-height: 140%;
+  }
+
+  @media (max-width: $desktopWidth) {
+    & {
+      margin-bottom: 15px;
+    }
+
+    &__wrapper {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
   }
 }
