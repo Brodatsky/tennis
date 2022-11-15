@@ -47,11 +47,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid $border-base;
-    border-radius: 50%;
   }
 
   &__button {
+    outline: 1px solid $border-base;
+    outline-offset: 8px;
     display: flex;
     justify-content: center;
     align-items: center;

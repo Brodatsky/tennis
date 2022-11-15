@@ -23,14 +23,14 @@ body {
   margin: 0 auto;
 }
 
-@media (min-width: 1296px) {
-}
-
 @media (max-width: 1400px) {
   .hero__services {
     display: none;
   }
 
+  .container {
+    padding: 20px;
+  }
   html {
     overflow: visible;
   }

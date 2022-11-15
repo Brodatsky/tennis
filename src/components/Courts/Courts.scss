@@ -1,4 +1,6 @@
 .courts {
+  color: $mainFontColor;
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -29,13 +31,11 @@
   }
 
   &__title {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    position: absolute;
     width: 100%;
     left: 0;
-    top: 334px;
-    position: absolute;
-    color: $mainFontColor;
+    bottom: 40px;
     font-weight: 700;
     font-size: 27px;
     line-height: 140%;
