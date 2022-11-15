@@ -1,11 +1,12 @@
 @import "~normalize.css";
 @import "./utils/fonts.css";
 @import "./utils/vars.scss";
+@import "./utils/reset.scss";
 @import "../../components/modul.scss";
 
-// html {
-//   overflow: hidden;
-// }
+html {
+  overflow: hidden;
+}
 
 body {
   color: $mainFontColor;
@@ -16,25 +17,21 @@ body {
   background: $bg-color;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .container {
   max-width: 1296px;
   width: 100%;
   margin: 0 auto;
-
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 @media (min-width: 1296px) {
 }
 
-@media (max-width: $tableWidth) {
+@media (max-width: 1400px) {
   .hero__services {
     display: none;
+  }
+
+  html {
+    overflow: visible;
   }
 }
