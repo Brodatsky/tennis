@@ -1,0 +1,18 @@
+.sport-club {
+  height: 654px;
+  //   width: 636px;
+
+  &__wrapper {
+    // display: flex;
+    // justify-content: center;
+    background-color: antiquewhite;
+  }
+
+  &__img {
+    height: 654px;
+    background-image: url(../../assets/img/Sport-club.jpg);
+  }
+
+  &__text {
+  }
+}
