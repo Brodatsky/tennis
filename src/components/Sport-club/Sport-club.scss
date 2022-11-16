@@ -1,15 +1,19 @@
 .sport-club {
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
   &__wrapper {
     position: relative;
+    width: 1076px;
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    min-height: 654px;
-    border: 1px solid black;
   }
 
   &__img {
     position: absolute;
+    left: 0px;
+    top: 70px;
     height: 514px;
     width: 526px;
     background-image: url(../../assets/img/Sport-club.jpg);
@@ -19,6 +23,9 @@
   }
 
   &__text {
+    display: flex;
+    justify-content: center;
+    color: $secondFontColor;
     min-width: 636px;
     min-height: 654px;
     background-color: $sub-accent-color;
