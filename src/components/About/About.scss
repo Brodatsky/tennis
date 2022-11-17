@@ -1,4 +1,4 @@
-.sport-club {
+.about {
   &__container {
     display: flex;
     justify-content: center;
@@ -24,10 +24,23 @@
 
   &__text {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
     color: $secondFontColor;
-    min-width: 636px;
+    width: 636px;
     min-height: 654px;
     background-color: $sub-accent-color;
+  }
+
+  &__text-wrapper {
+    width: 430px;
+    margin-top: 70px;
+    margin-right: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
   }
 }
