@@ -1,11 +1,13 @@
 .about {
+  color: #333333;
+
   &__container {
     display: flex;
     justify-content: center;
   }
   &__wrapper {
     position: relative;
-    width: 1076px;
+    min-width: 1076px;
     display: flex;
     justify-content: flex-end;
   }
@@ -27,7 +29,6 @@
     flex-direction: column;
     justify-content: start;
     align-items: flex-end;
-    color: $secondFontColor;
     width: 636px;
     min-height: 654px;
     background-color: $sub-accent-color;
@@ -44,11 +45,26 @@
   }
 
   &__text-block {
-    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  &__text-p {
+    margin-bottom: 17px;
   }
 
   &__list {
+    list-style: url("../../assets/svg/list-style-square.svg");
     display: flex;
     flex-direction: column;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 14px;
+  }
+
+  &__list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
   }
 }
