@@ -39,6 +39,11 @@ h3 {
   font-size: 27px;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 21px;
+}
+
 @media (max-width: $desktopWidth) {
   .hero__services {
     display: none;
