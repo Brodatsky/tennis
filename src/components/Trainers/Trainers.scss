@@ -1,0 +1,19 @@
+.trainers {
+  margin-bottom: 150px;
+  height: 523px;
+  color: $altFontColor;
+
+  &__title {
+    margin-bottom: 75px;
+  }
+
+  &__cards-slider {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__card {
+    width: 196px;
+    margin-right: 24px;
+  }
+}
