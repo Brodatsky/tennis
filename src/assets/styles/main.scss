@@ -23,12 +23,24 @@ body {
   margin: 0 auto;
 }
 
+h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 27px;
+}
+
 @media (max-width: $desktopWidth) {
   .hero__services {
     display: none;
-  }
-
-  html {
-    overflow: visible;
   }
 }
