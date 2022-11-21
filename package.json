@@ -37,6 +37,7 @@
     "sass-migrator": "^1.7.1",
     "style-loader": "^3.3.1",
     "svg-inline-loader": "^0.8.2",
+    "swiper": "^8.4.4",
     "terser-webpack-plugin": "^5.3.6",
     "webpack": "^5.74.0",
     "webpack-bundle-analyzer": "^4.6.1",
