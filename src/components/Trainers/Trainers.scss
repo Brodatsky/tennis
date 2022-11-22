@@ -23,10 +23,13 @@
   &__cards-slider {
     display: flex;
     flex-direction: row;
+    position: relative;
+    left: 0;
   }
 
-  &__cards-container {
+  &__card-container {
     margin-right: 24px;
+    // overflow: hidden;
   }
 
   &__card {
