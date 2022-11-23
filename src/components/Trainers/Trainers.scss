@@ -21,6 +21,10 @@
   }
 
   &__cards-slider {
+    overflow: hidden;
+  }
+
+  &__cards-slider-line {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -28,13 +32,13 @@
   }
 
   &__card-container {
-    margin-right: 24px;
-    // overflow: hidden;
+    height: 378px;
+    width: 196px;
   }
 
   &__card {
-    height: 378px;
-    width: 196px;
+    // min-width: 196px;
+    margin-right: 24px;
     text-align: center;
   }
 
