@@ -9,24 +9,26 @@
     margin-bottom: 75px;
   }
 
-  &__title {
-  }
+  // &__title {
+  // }
 
   &__btns {
     display: flex;
     width: 100px;
     justify-content: space-between;
+    position: relative;
+    left: -5px;
+    top: 3px;
+  }
+
+  &__btn-prev {
+    margin-right: 15px;
   }
 
   &__btn {
-    margin-right: 15px;
-    min-height: 45px;
+    max-height: 45px;
     min-width: 45px;
     background-color: $accent-color;
-  }
-
-  &_btn:last-child {
-    margin-right: 0px;
   }
 
   &__slider-bottom {
@@ -41,7 +43,7 @@
   }
 
   &__card-container {
-    height: 378px;
+    height: 400px;
     width: 196px;
   }
 
