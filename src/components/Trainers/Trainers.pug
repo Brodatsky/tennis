@@ -1,12 +1,10 @@
+include ../Buttons/Buttons.pug
+
 section.trainers
     .container 
         .trainers__slider-top
             h2.trainers__title Тренерский состав
-            .trainers__btns
-                button.trainers__btn-prev.trainers__btn
-                    include ../../assets/svg/arrow-left.svg
-                button.trainers__btn-next.trainers__btn
-                    include ../../assets/svg/arrow-right.svg
+            +Buttons
 
         .trainers__slider-bottom
             .trainers__cards-slider-line
