@@ -1,14 +1,8 @@
 @import "~normalize.css";
-@import "../../../node_modules/swiper/swiper.min.css";
 @import "./utils/fonts.css";
 @import "./utils/vars.scss";
 @import "./utils/reset.scss";
-@import "./utils/swiper.min.css";
 @import "../../components/modul.scss";
-
-// html {
-//   overflow: hidden;
-// }
 
 body {
   color: $mainFontColor;
