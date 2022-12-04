@@ -1,15 +1,14 @@
 const path = require("path");
 const fs = require("fs");
-const webpack = require("webpack");
+// const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // const TerserWebpackPlugin = require("terser-webpack-plugin");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
-// const isProd = !isDev;
 
 const filename = (ext) =>
   isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
@@ -17,39 +16,33 @@ const filename = (ext) =>
 module.exports = {
   context: path.resolve(__dirname, "src"),
   entry: {},
-  // entry: './App.js',
   output: {
     filename: `./js/${filename("js")}`,
     path: path.resolve(__dirname, "dist"),
   },
-
   devServer: {
     port: 9000,
     hot: true,
   },
   plugins: [
-    new webpack.SourceMapDevToolPlugin({
-      filename: "[file].map[query]",
-      exclude: ["vendor.js"],
-    }),
+    // new webpack.SourceMapDevToolPlugin({
+    //   filename: "[file].map[query]",
+    //   exclude: ["vendor.js"],
+    // }),
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin({
-      patterns: [
-        {
-          from: path.resolve(__dirname, "src/assets/img"),
-          to: path.resolve(__dirname, "dist/assets/img"),
-        },
-        {
-          from: path.resolve(__dirname, "src/assets/favicons"),
-          to: path.resolve(__dirname, "dist/assets/favicons"),
-        },
-        // {
-        //   from: path.resolve(__dirname, 'src/assets/svg'),
-        //   to: path.resolve(__dirname, 'dist/assets/svg')
-        // }
-      ],
-    }),
+    // new CopyWebpackPlugin({
+    //   patterns: [
+    //     {
+    //       from: path.resolve(__dirname, "src/assets/img"),
+    //       to: path.resolve(__dirname, "dist/assets/img"),
+    //     },
+    //     {
+    //       from: path.resolve(__dirname, "src/assets/favicons"),
+    //       to: path.resolve(__dirname, "dist/assets/favicons"),
+    //     },
+    //   ],
+    // }),
     new MiniCssExtractPlugin({
       filename: `./css/${filename("css")}`,
     }),
@@ -62,7 +55,10 @@ module.exports = {
       },
       {
         test: /\.pug$/i,
-        loader: "pug-loader",
+        use: [
+          { loader: "html-loader" },
+          { loader: "pug-html-loader", options: { data: {} } },
+        ],
       },
       {
         test: /\.css$/i,
