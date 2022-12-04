@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  align-items: center;
+  min-height: 96px;
+  background-color: $sub-accent-color;
+  color: $altFontColor;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__copyright {
+    margin-right: 104px;
+    opacity: 0.33;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  &__nav {
+    margin-right: 30px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    fill: $accent-color;
+  }
+
+  &__icon-yt {
+    margin-right: 19px;
+  }
+  &__icon-vk {
+    margin-right: 19px;
+  }
+}
