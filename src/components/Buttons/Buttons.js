@@ -1,8 +1,8 @@
 let offset = 0;
 const sliderLine = document.querySelector(".trainers__cards-slider-line");
-
+console.log("buttons");
 document
-  .querySelector(".trainers__btn-next")
+  .querySelector(".buttons__btn-next")
   .addEventListener("click", function () {
     console.log("next");
     offset = offset + 220;
@@ -13,7 +13,7 @@ document
   });
 
 document
-  .querySelector(".trainers__btn-prev")
+  .querySelector(".buttons__btn-prev")
   .addEventListener("click", function () {
     console.log("prev");
     offset = offset - 220;

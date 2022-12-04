@@ -1,1 +1,1 @@
-import "./Trainers/Trainers.js";
+import "./Buttons/Buttons.js";

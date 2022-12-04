@@ -1,2 +1,16 @@
+include ../Nav/Nav.pug
+
 footer.footer
-    p Footer
+    .container
+        .footer__inner
+            .footer__copyright
+                p 2022 © Все права защищены.
+            .footer__nav
+                +Nav
+            .footer__icons
+                i.icon.footer__icon-yt
+                    include ../../assets/svg/yt-footer.svg
+                i.icon.footer__icon-vk
+                    include ../../assets/svg/vk-footer.svg
+                i.icon.footer__icon-tg
+                    include ../../assets/svg/tg-footer.svg

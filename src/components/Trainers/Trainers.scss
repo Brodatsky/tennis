@@ -9,28 +9,6 @@
     margin-bottom: 75px;
   }
 
-  // &__title {
-  // }
-
-  &__btns {
-    display: flex;
-    width: 100px;
-    justify-content: space-between;
-    position: relative;
-    left: -5px;
-    top: 3px;
-  }
-
-  &__btn-prev {
-    margin-right: 15px;
-  }
-
-  &__btn {
-    max-height: 45px;
-    min-width: 45px;
-    background-color: $accent-color;
-  }
-
   &__slider-bottom {
     overflow: hidden;
   }

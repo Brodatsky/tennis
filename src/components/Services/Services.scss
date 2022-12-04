@@ -1,0 +1,37 @@
+.services {
+  margin-bottom: 150px;
+
+  &__container {
+    max-width: 636px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 75px;
+  }
+
+  &__title {
+    color: $altFontColor;
+  }
+
+  &__img-container {
+    position: relative;
+    min-width: 636px;
+    padding: 30px 25px;
+    height: 330px;
+    border: 1px solid $sub-accent-color;
+  }
+
+  &__img {
+    width: 586px;
+    max-height: 270px;
+  }
+
+  &__img-title {
+    color: $mainFontColor;
+    position: absolute;
+    top: 231px;
+    left: 65px;
+  }
+}

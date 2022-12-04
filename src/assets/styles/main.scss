@@ -25,6 +25,11 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 h1 {
   margin: 0;
   font-weight: 700;
@@ -44,6 +49,14 @@ h3 {
 h4 {
   font-weight: 600;
   font-size: 21px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
 }
 
 @media (max-width: $desktopWidth) {

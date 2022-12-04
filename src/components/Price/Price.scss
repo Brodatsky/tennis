@@ -1,0 +1,24 @@
+.price {
+  &__title {
+    color: $altFontColor;
+    margin-bottom: 75px;
+  }
+
+  &__buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 35px;
+    color: $mainFontColor;
+    min-width: 526px;
+    min-height: 60px;
+    background-color: $accent-color;
+    margin-bottom: 30px;
+  }
+}
