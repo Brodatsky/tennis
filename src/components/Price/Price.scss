@@ -1,5 +1,6 @@
 .price {
   margin-right: 25px;
+
   &__title {
     color: $altFontColor;
     margin-bottom: 75px;
@@ -21,5 +22,6 @@
     min-height: 60px;
     background-color: $accent-color;
     margin-bottom: 30px;
+    fill: $default-color;
   }
 }

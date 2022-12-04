@@ -15,11 +15,11 @@
   }
 
   &__btn {
-    cursor: pointer;
     fill: $mainFontColor;
     min-height: 45px;
     min-width: 45px;
     background-color: $accent-color;
+    transition: fill 0.3s;
   }
 
   &__btn:hover {

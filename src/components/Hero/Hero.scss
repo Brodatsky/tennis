@@ -55,6 +55,12 @@
     border: none;
     background: $accent-color;
     color: $mainFontColor;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  &__button:hover {
+    color: $link-hover-color;
   }
 
   &__play-text {

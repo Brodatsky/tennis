@@ -31,7 +31,15 @@
     justify-content: space-between;
     width: 92px;
     margin-left: auto;
+  }
+
+  &__icon {
     fill: $mainFontColor;
+    transition: fill 0.3s;
+  }
+
+  &__icon:hover {
+    fill: $link-hover-color;
   }
 
   &::after {
