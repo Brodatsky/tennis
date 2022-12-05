@@ -18,7 +18,7 @@ module.exports = {
   entry: {},
   output: {
     filename: `./js/${filename("js")}`,
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
   },
   devServer: {
     port: 9000,
