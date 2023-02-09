@@ -11,6 +11,8 @@
   &__inner {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 1000px;
   }
 
   &__text {
