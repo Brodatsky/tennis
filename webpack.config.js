@@ -1,11 +1,8 @@
 const path = require("path");
 const fs = require("fs");
-// const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-// const TerserWebpackPlugin = require("terser-webpack-plugin");
-// const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
 
 const isDev = process.env.NODE_ENV === "development";
@@ -25,24 +22,8 @@ module.exports = {
     hot: true,
   },
   plugins: [
-    // new webpack.SourceMapDevToolPlugin({
-    //   filename: "[file].map[query]",
-    //   exclude: ["vendor.js"],
-    // }),
     new ESLintPlugin(),
     new CleanWebpackPlugin(),
-    // new CopyWebpackPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(__dirname, "src/assets/img"),
-    //       to: path.resolve(__dirname, "dist/assets/img"),
-    //     },
-    //     {
-    //       from: path.resolve(__dirname, "src/assets/favicons"),
-    //       to: path.resolve(__dirname, "dist/assets/favicons"),
-    //     },
-    //   ],
-    // }),
     new MiniCssExtractPlugin({
       filename: `./css/${filename("css")}`,
     }),
