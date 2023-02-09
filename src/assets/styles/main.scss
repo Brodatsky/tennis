@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 1296px;
+  max-width: $desktopWidth;
   width: 100%;
   margin: 0 auto;
 }

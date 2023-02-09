@@ -14,10 +14,9 @@
   }
 
   &__cards-slider-line {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 200px;
   }
 
   &__card-container {
@@ -28,6 +27,10 @@
   &__card {
     margin-right: 24px;
     text-align: center;
+  }
+
+  &__card:last-child {
+    margin-right: 0px;
   }
 
   &__card-img {
