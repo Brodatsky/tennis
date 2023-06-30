@@ -16,8 +16,8 @@ const filename = (ext) =>
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
-  entry: {},
-  // entry: './App.js',
+  // entry: {},
+  entry: "./App.js",
   output: {
     filename: `./js/${filename("js")}`,
     path: path.resolve(__dirname, "dist"),
